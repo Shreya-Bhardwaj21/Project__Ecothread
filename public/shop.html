@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Integration</title>
+    <link rel="stylesheet" href="../src/shop.css">
+    <script src="../src/shop.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>E-commerce Integration</h1>
+
+        <!-- Product Listings -->
+        <div class="products">
+            <h2>Products</h2>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Eco-Friendly Shirt">
+                <div>
+                    <h3>Eco-Friendly Shirt</h3>
+                    <p>Price: $29.99</p>
+                </div>
+                <button onclick="addToCart('Eco-Friendly Shirt', 29.99, 'https://via.placeholder.com/100')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Recycled Material Jacket">
+                <div>
+                    <h3>Recycled Material Jacket</h3>
+                    <p>Price: $89.99</p>
+                </div>
+                <button onclick="addToCart('Recycled Material Jacket', 89.99, 'https://via.placeholder.com/100')">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Shopping Cart -->
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+            <button onclick="proceedToCheckout()">Checkout</button>
+        </div>
+
+        <!-- Checkout -->
+        <div class="checkout" id="checkoutSection" style="display: none;">
+            <h2>Checkout</h2>
+            <form id="checkoutForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="number" id="cardNumber" placeholder="Card Number" required>
+                <input type="text" id="expiryDate" placeholder="Expiry Date (MM/YY)" required>
+                <button type="button" onclick="completePurchase()">Complete Purchase</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

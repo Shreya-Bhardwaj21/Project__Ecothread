@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Scores</title>
+    <link rel="stylesheet" href="../src/scores.css">
+    <script src="../src/scores.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sustainability Scores</h1>
+        
+        <!-- Controls for Search and Sorting -->
+        <div class="controls">
+            <input type="text" id="searchInput" onkeyup="filterBrands()" placeholder="Search for brands...">
+            <select id="sortSelect" onchange="sortBrands()">
+                <option value="default">Sort by Rating</option>
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+
+        <!-- Brand Grid -->
+        <div class="brand-grid" id="brandGrid">
+            <div class="brand-card" data-brand-name="EcoFashion" data-rating="4.5">
+                <div class="brand-header">
+                    <h2>EcoFashion</h2>
+                </div>
+                <div class="brand-info">
+                    <p><strong>Environmental Impact:</strong> Low</p>
+                    <p><strong>Ethical Practices:</strong> High</p>
+                    <div class="rating">
+                        <span>★★★★☆</span>
+                        <span class="rating-text">4.5/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="brand-card" data-brand-name="GreenThreads" data-rating="3.8">
+                <div class="brand-header">
+                    <h2>GreenThreads</h2>
+                </div>
+                <div class="brand-info">
+                    <p><strong>Environmental Impact:</strong> Moderate</p>
+                    <p><strong>Ethical Practices:</strong> High</p>
+                    <div class="rating">
+                        <span>★★★☆☆</span>
+                        <span class="rating-text">3.8/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="brand-card" data-brand-name="PureWear" data-rating="3.5">
+                <div class="brand-header">
+                    <h2>PureWear</h2>
+                </div>
+                <div class="brand-info">
+                    <p><strong>Environmental Impact:</strong> Very Low</p>
+                    <p><strong>Ethical Practices:</strong> Moderate</p>
+                    <div class="rating">
+                        <span>★★★☆☆</span>
+                        <span class="rating-text">3.5/5</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more brand cards as needed -->
+        </div>
+    </div>
+</body>
+</html>

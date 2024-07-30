@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Filters</title>
+    <link rel="stylesheet" href="../src/search-filter.css">
+    <script src="../src/search-filter.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Search and Filters</h1>
+
+        <!-- Filters -->
+        <div class="filters">
+            <div class="filter-group">
+                <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search for brands or products...">
+            </div>
+            <div class="filter-group">
+                <select id="locationFilter" onchange="filterProducts()">
+                    <option value="">All Locations</option>
+                    <option value="New York">New York</option>
+                    <option value="San Francisco">San Francisco</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="clothingTypeFilter" onchange="filterProducts()">
+                    <option value="">All Clothing Types</option>
+                    <option value="Shirts">Shirts</option>
+                    <option value="Pants">Pants</option>
+                    <option value="Dresses">Dresses</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="sustainabilityScoreFilter" onchange="filterProducts()">
+                    <option value="">All Sustainability Scores</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+            <!-- Example Product Card -->
+            <div class="product-card" data-location="New York" data-clothing-type="Shirts" data-sustainability-score="High">
+                <div class="product-header">
+                    <h2>Eco-Friendly Shirt</h2>
+                    <div class="product-price">$29.99</div>
+                </div>
+                <div class="product-info">
+                    <p><strong>Location:</strong> New York</p>
+                    <p><strong>Clothing Type:</strong> Shirt</p>
+                    <p><strong>Sustainability Score:</strong> High</p>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </div>
+</body>
+</html>

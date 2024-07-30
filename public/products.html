@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <link rel="stylesheet" href="../src/products.css">
+    <script src="../src/products.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Listings</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search for products...">
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+            <!-- Example Product Card -->
+            <div class="product-card" data-product-name="Eco-Friendly Sofa">
+                <div class="product-header">
+                    <h2>Eco-Friendly Sofa</h2>
+                    <div class="product-price">$799.99</div>
+                </div>
+                <div class="product-info">
+                    <p><strong>Materials:</strong></p>
+                    <ul>
+                        <li>Recycled Polyester Fabric</li>
+                        <li>Eco-Friendly Foam</li>
+                    </ul>
+                    <p><strong>Production Methods:</strong></p>
+                    <ul>
+                        <li>Sustainable Manufacturing</li>
+                        <li>Low Energy Usage</li>
+                    </ul>
+                    <button onclick="showProductDetails('Eco-Friendly Sofa')">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-name="Eco-Friendly Sofa">
+                <div class="product-header">
+                    <h2>Eco-Friendly Sofa</h2>
+                    <div class="product-price">$799.99</div>
+                </div>
+                <div class="product-info">
+                    <p><strong>Materials:</strong></p>
+                    <ul>
+                        <li>Recycled Polyester Fabric</li>
+                        <li>Eco-Friendly Foam</li>
+                    </ul>
+                    <p><strong>Production Methods:</strong></p>
+                    <ul>
+                        <li>Sustainable Manufacturing</li>
+                        <li>Low Energy Usage</li>
+                    </ul>
+                    <button onclick="showProductDetails('Eco-Friendly Sofa')">View Details</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-name="Eco-Friendly Sofa">
+                <div class="product-header">
+                    <h2>Eco-Friendly Sofa</h2>
+                    <div class="product-price">$799.99</div>
+                </div>
+                <div class="product-info">
+                    <p><strong>Materials:</strong></p>
+                    <ul>
+                        <li>Recycled Polyester Fabric</li>
+                        <li>Eco-Friendly Foam</li>
+                    </ul>
+                    <p><strong>Production Methods:</strong></p>
+                    <ul>
+                        <li>Sustainable Manufacturing</li>
+                        <li>Low Energy Usage</li>
+                    </ul>
+                    <button onclick="showProductDetails('Eco-Friendly Sofa')">View Details</button>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+.nav-container{
+    margin-left: 100px;
+}
+nav a {
+    margin-top: 10px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.signin{
+    margin-left: 159px;
+    font-size: 28px;
+}
+nav a:hover {
+    background-color: #575757;
+}
+.hero {
+    margin-left: 120px;
+    margin-right: 120px;
+    height: 450px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.hero-text{
+    padding-right: 160px;
+    margin-top: 65px;
+}
+.hero-text-title{
+    font-size: 3em;
+    margin-bottom: 35px;
+    
+}
+.hero-text-subTitle {
+    font-size: 1.5em;
+}
+.hero button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+}
+.hero-image{
+    height: 298px;
+}
